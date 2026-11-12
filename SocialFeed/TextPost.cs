@@ -27,7 +27,7 @@ namespace SocialFeed
         {
             if(_text.Length > 20)
             {
-                return $"{base.GetDescription()} : {_text.Take(20)} ...";
+                return $"{base.GetDescription()} : {_text.Substring(0,20)} ...";
             }
             return $"{base.GetDescription()} : {_text}";
 
