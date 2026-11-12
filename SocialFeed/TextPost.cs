@@ -18,7 +18,7 @@ namespace SocialFeed
             _text = text;
         }
 
-        public override int Score()
+        public virtual int Score()
         {
             return Likes;
         }

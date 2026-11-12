@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace SocialFeed
 {
-    public class IReportable
+    public interface IReportable
     {
+        void Report();
+
+        int ReportCount();
+        string GetDescription();
     }
 }
